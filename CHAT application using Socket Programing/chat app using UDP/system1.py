@@ -4,8 +4,8 @@ import threading
 
 #send
 client1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sIP = "192.168.1.7"
-sPORT = 8887
+sIP = "192.168.1.5"
+sPORT = 8881
 def send():
     while True:
         data=input("")
@@ -18,8 +18,8 @@ def send():
         
 #recived
 client2 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-ip="192.168.1.5"
-port=8881
+ip="192.168.1.7"
+port=8887
 client2.bind((ip,port))
 def recv():
     while True:
